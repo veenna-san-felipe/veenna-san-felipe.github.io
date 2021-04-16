@@ -7,33 +7,31 @@ a:link {
 }
 
 a:hover {
-	color: blue;
+	color: rgb(245, 195, 21);
 }
 
 body {
+	padding: 0;
+	margin: 0;
 	font-family: Helvetica;
 	font-size: 22px;
 	color: black;
-	background-color: rgba(255, 235, 153);
+	background-color: rgba(251, 244, 225, 0.75);
 	text-align: center;
 }
 
-footer{
-	background-color: rgba(255, 219, 77);
-}
-
 h2.contact {
-	color: white;
+	color: rgb(251, 244, 225);
 }
 
 h1 {
-	background-color: rgba(235, 199, 77);
-	color: white;
+	background-color: rgb(245, 195, 21);
+	color: rgb(251, 244, 225);
 	font-family: serif;
 }
 
 p {
-	color: rgba(100, 100, 100);
+	color: rgb(100, 100, 100);
 }
 
 table, tr, th, td {
@@ -43,3 +41,22 @@ table, tr, th, td {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#project-title:hover, {
+	color: rgb(245, 195, 21);
+}
+
+#bio {
+	color: rgb(172, 108, 57);
+}
+
+#foot{
+	background-color: rgb(245, 195, 21);
+}
+
+/* ----- COLOR PALETTE REFERENCE -----
+	honey yellow: rgb(245, 195, 21)
+	off-white: rgb(251, 244, 225);
+	brown: rgb(172, 108, 57);
+	crayola's gold: rgb(232, 191, 139);
+   ----- COLOR PALETTE REFERENCE ----- */
