@@ -1,0 +1,59 @@
+body {
+	text-align: center;
+	background-color: rgb(37, 36, 37);
+	color: white;
+	font-size: 14px;
+}
+
+thead {
+	background-color: rgb(166, 108, 166);
+}
+
+table, th, td {
+	border: 2px solid rgb(93, 70, 145);
+	border-collapse: collapse;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+.code {
+	font-family: monospace;
+	color: rgb(37, 36, 37);
+	background-color: lightgray;
+}
+
+.property {
+	color: cornflowerblue;
+}
+
+#example1 {
+	color: red;
+}
+
+#example2 {
+	background-color: red;
+}
+
+#example3 {
+	color: aqua;
+}
+
+#example4 {
+	color: rgb(166, 108, 166);
+}
+
+#example5 {
+	color: hsl(29, 100%, 57%);
+}
+
+#example6 {
+	color: #597D35;
+}
+
+#example7 {
+	color: rgba(166, 108, 166, 0.35);
+}
