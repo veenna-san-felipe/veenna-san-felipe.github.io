@@ -22,7 +22,7 @@ header {
 	background-color: rgba(250, 223, 150, 98);
 }
 
-header::after {
+header:after {
 	content: '';
 	display: table;
 	clear: both;
@@ -110,6 +110,25 @@ h2 {
 	width: 170px;
 }
 
+#art {
+	background-color: rgb(122, 109, 73);
+}
+
+#art h2 {
+	color: rgb(251, 244, 226);
+	padding-top: 0.5em;
+}
+
+#art .project-title {
+	color: rgb(250, 223, 150);
+}
+
+#cyrus {
+	height: 320px;
+	width: 250px;
+	margin: 0.25em 0 0.5em;
+}
+
 /* ----- CONTACT/FOOTER----- */
 #contact {
 	color: rgb(245, 195, 21);
@@ -155,11 +174,11 @@ footer ul {
 /* ----- COLOR PALETTE REFERENCE -----
 
 	* Dusty yellow: #CFAE3E, rgb(207, 174, 62);
-	* Warm gray: #7A776E, rgb(122, 119, 110)
-	* Pale yellow: #FADF96, rgb(250, 223, 150)
-	* Warm white: #FBF4E2, rgb(251, 244, 226)
-	* Pale brown: #7A6D49, rgb(122, 109, 73)
+	* Warm gray: #7A776E, rgb(122, 119, 110);
+	* Pale yellow: #FADF96, rgb(250, 223, 150);
+	* Warm white: #FBF4E2, rgb(251, 244, 226);
+	* Pale brown: #7A6D49, rgb(122, 109, 73);
 	* Lighter pale brown: #A99259, rgb(169, 146);
-	* Khaki: #C7B077, rgb(199, 176, 119)
+	* Khaki: #C7B077, rgb(199, 176, 119);
 
 ----- COLOR PALETTE REFERENCE ----- */
