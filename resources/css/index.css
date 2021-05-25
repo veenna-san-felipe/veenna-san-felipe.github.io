@@ -69,7 +69,18 @@ nav li {
 }
 
 /* ----- ABOUT ----- */
-#headshot {
+#about {
+	margin: 0;
+	padding: 0;
+}
+
+#about:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#headshot-img {
 	width: 15em;
 	height: 15em;
 	border-radius: 50%;
@@ -78,45 +89,62 @@ nav li {
 }
 
 #bio {
-	float: right;
-}
-
-#bio h1 {
-	padding: 1em 1em 0;
+	margin: 1em;
+	padding: 1em;
 }
 
 #bio p {
-	padding: 0 2em;
 	font-family: 'Noto Serif JP', serif;
 	font-size: 16px;
 }
 
 h1 {
 	color: rgb(245, 195, 21);
+	font-size: 2em;
 }
 
 h2 {
 	color: rgb(122, 109, 73);
 }
 
+#projects {
+	background-color: rgb(199, 176, 119);
+	padding-bottom: 0.5em;
+}
+
+#project-blocks {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+#projects h2 {
+	padding: 0.5em;
+}
+
+.block {
+	margin: 0.5em;
+	background-color: rgb(251, 244, 226);
+	height: 240px;
+	width: 240px;
+	padding: 0.5em 0.25em 0;
+}
+
 .project-title {
-	color: rgb(207, 174, 62);
+	color: rgb(245, 195, 21);
 	text-decoration: none;
+	word-wrap: break-word;
 	font-weight: bold;
 }
 
 .project-img {
-	height: 125px;
+	height: 130px;
 	width: 170px;
-}
-
-#art {
-	background-color: rgb(122, 109, 73);
+	margin-top: 0.5em;
 }
 
 #art h2 {
-	color: rgb(251, 244, 226);
-	padding-top: 0.5em;
+	color: rgb(122, 109, 73);
 }
 
 #art .project-title {
@@ -178,7 +206,7 @@ footer ul {
 	* Pale yellow: #FADF96, rgb(250, 223, 150);
 	* Warm white: #FBF4E2, rgb(251, 244, 226);
 	* Pale brown: #7A6D49, rgb(122, 109, 73);
-	* Lighter pale brown: #A99259, rgb(169, 146);
+	* Lighter pale brown: #A99259, rgb(169, 146, 89);
 	* Khaki: #C7B077, rgb(199, 176, 119);
 
 ----- COLOR PALETTE REFERENCE ----- */
