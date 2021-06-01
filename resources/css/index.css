@@ -33,13 +33,13 @@ header:after {
 }
 
 h1 {
+	float: left;
 	font-size: 22px;
 	color: rgb(122, 109, 73);
 	border: 5px solid rgb(122, 109, 73);
 	border-radius: 15px;
-	float: left;
-	padding: 0.25em;
-	margin-left: 0.5em;
+	padding: 5px;
+	margin-left: 10px;
 }
 
 nav {
@@ -73,41 +73,38 @@ nav li {
 }
 
 /* ----- ABOUT ----- */
-#about {
-	margin: 2em 0 3em;
-	padding: 0;
-}
 
-#about:after {
-	content: '';
-	display: table;
-	clear: both;
+#about {
+	height: 500px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: center;
 }
 
 #headshot-img {
-	width: 15em;
-	height: 15em;
-	border-radius: 50%;
-	padding: 2em;
-	float: left;
+	max-width: 250px;
+	max-height: 250px;
+	border-radius: 45px;
 }
 
 #bio {
-	margin: 0 1em;
-	padding: 0.5em 1em;
+	max-width: 700px;
 }
 
 #bio h2 {
 	color: rgb(245, 195, 21);
-	font-size: 50px;
+	font-size: 60px;
 }
 
 #bio p {
 	font-family: 'Noto Serif JP', serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: bold;
-	line-height: 28px;
+	line-height: 30px;
 	letter-spacing: 1px;
+	padding: 0 35px;
 }
 
 #projects {
@@ -214,5 +211,6 @@ footer ul {
 	* Pale brown: #7A6D49, rgb(122, 109, 73);
 	* Lighter pale brown: #A99259, rgb(169, 146, 89);
 	* Khaki: #C7B077, rgb(199, 176, 119);
+	* Sunshine Yellow: #F5C315, rgb(245, 195, 21);
 
 ----- COLOR PALETTE REFERENCE ----- */
