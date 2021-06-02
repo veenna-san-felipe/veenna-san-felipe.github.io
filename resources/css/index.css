@@ -8,17 +8,11 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 22px;
 	color: rgb(122, 109, 73);
-	background-color: rgba(251, 244, 225, 0.75);
 	text-align: center;
 }
 
-h2 {
+h3 {
 	color: rgb(122, 109, 73);
-}
-
-img {
-	max-width: 100%;
-	margin: 0 auto;
 }
 
 /* ----- HEADER ----- */
@@ -39,7 +33,7 @@ h1 {
 	border: 5px solid rgb(122, 109, 73);
 	border-radius: 15px;
 	padding: 5px;
-	margin-left: 10px;
+	margin-left: 12px;
 }
 
 nav {
@@ -72,28 +66,38 @@ nav li {
 	position: relative;
 }
 
+/* ----- END HEADER ----- */
+
 /* ----- ABOUT ----- */
 
 #about {
-	height: 500px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: baseline;
-	align-content: center;
+	height: 550px;
+	background-color: rgb(251, 244, 226);
+	padding: 100px;
+}
+
+#about:after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
 #headshot-img {
-	max-width: 250px;
-	max-height: 250px;
+	width: 325px;
+	height: 325px;
 	border-radius: 45px;
+	float: left;
+	margin-left: 50px;
 }
 
 #bio {
-	max-width: 700px;
+	max-width: 750px;
+	max-height: 325px;
+	float: right;
+	margin-right: 50px;
 }
 
-#bio h2 {
+h2 {
 	color: rgb(245, 195, 21);
 	font-size: 60px;
 }
@@ -104,13 +108,15 @@ nav li {
 	font-weight: bold;
 	line-height: 30px;
 	letter-spacing: 1px;
-	padding: 0 35px;
 }
 
+/* ----- END ABOUT ----- */
+
+/* ----- PROJECTS ----- */
+
 #projects {
-	background-color: rgb(199, 176, 119);
-	padding-bottom: 0.5em;
-	margin: 0 2em;
+	padding: 0 50px;
+	margin: 50px 0;
 }
 
 #project-blocks {
@@ -119,33 +125,34 @@ nav li {
 	justify-content: center;
 }
 
-#projects h2 {
-	padding: 0.5em;
-}
-
 .block {
-	margin: 0.5em;
-	background-color: rgb(251, 244, 226);
+	margin: 25px;
+	background-color: rgb(199, 176, 119);;
 	border-radius: 15px;
-	height: 240px;
-	width: 240px;
-	padding: 0.5em 0.25em 0;
+	height: 250px;
+	width: 250px;
+	padding: 25px;
 }
 
 .project-title {
-	color: rgb(245, 195, 21);
+	color: rgb(251, 244, 226);
 	text-decoration: none;
 	word-wrap: break-word;
 	font-weight: bold;
+	font-size: 1rem;
 }
 
 .project-img {
 	height: 130px;
 	width: 175px;
-	margin-top: 0.5em;
+	margin: 10px;
 }
 
-#art h2 {
+/* ----- END PROJECTS ----- */
+
+/* ----- ART ----- */
+
+#art h3 {
 	color: rgb(122, 109, 73);
 }
 
@@ -159,6 +166,8 @@ nav li {
 	margin: 0.25em 0 0.5em;
 }
 
+/* ----- END ART ----- */
+
 /* ----- CONTACT/FOOTER----- */
 #contact {
 	color: rgb(245, 195, 21);
@@ -167,6 +176,8 @@ nav li {
 footer {
 	background-color: rgba(250, 223, 150, 98);
 	padding: 0.5em;
+	bottom: 0;
+	width: 100%;
 }
 
 footer a {
