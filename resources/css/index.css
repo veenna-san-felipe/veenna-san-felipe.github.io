@@ -199,6 +199,10 @@ footer h2 {
 	margin-top: 0.5em;
 }
 
+footer p {
+	font-size: 18px;
+}
+
 footer li {
 	color: rgb(122, 109, 73);
 	font-weight: bold;
