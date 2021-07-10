@@ -3,6 +3,9 @@
 	<head>
 		<title>Web Dev Cheatsheet</title>
 		<link rel="stylesheet" type="text/css" href="./resources/css/cheatsheet.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -26,7 +29,7 @@
 						<td>
 							The content of an HTML element is the information between the opening and closing tags of an element.
 							<br>
-							Ex: &lt;p&gt;This is content&lt;/p&gt;
+							Ex: &lt;<span class="tag">p</span>&gt;This is content&lt;<span class="tag">/p</span>&gt;
 						</td>
 					</tr>
 					<tr>
@@ -50,8 +53,125 @@
 						<td>The paragraph element contains and displays a block of text.</td>
 					</tr>
 					<tr>
-						<td>Lists (&lt;<span class="tag">ol</span>&gt; and &lt;<span class="tag">ul</span>&gt;) and List Items &lt;<span class="tag">li</span>&gt;</td>
-						<td>Creates a list of items in order (&lt;<span class="tag">ol</span>&gt; by number) or unordered (&lt;<span class="tag">ul</span>&gt; with bullet points).</td>
+						<td>Ordered Lists &lt;<span class="tag">ol</span>&gt;, Unordered Lists &lt;<span class="tag">ul</span>&gt;), and List Items &lt;<span class="tag">li</span>&gt;</td>
+						<td>Creates a list of items in order by number, or unordered with bullet points.</td>
+					</tr>
+					<tr>
+						<td>Image Element &lt;<span class="tag">img</span>&gt;</td>
+						<td>
+							Embeds images in documents. &lt;<span class="tag">img</span>&gt; is an empty element (no closing tag) and the src attribute contains the image URL.
+							<br>
+							Ex: &lt;<span class="tag">img</span> <span class="attribute">src</span>=<span class="values">"image.png"</span>&gt;
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Tables</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>This row is made up of table headers</th>
+						<th>This is a table header</th>
+						<th>This is another table header</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>This area includes table data</td>
+						<td colspan="2">Row data that spans 2 columns</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Column data that spans 2 rows</td>
+						<td>This is also table data</td>
+						<td>Data</td>
+					</tr>
+					<tr>
+						<td>Data</td>
+						<td>This is more table data</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>End of column 1</td>
+						<td>This row is the table footer</td>
+						<td>End of column 3</td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<h3>Forms</h3>
+			<table>
+				<thead>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Code</th>
+					<th>Example</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="4">INPUTS</td>
+					</tr>
+					<tr>
+						<td>Checkbox Type</td>
+						<td>Renders a single checkbox. To create a group of checkboxes related to the same topic, they should all use the same <span class="attribute">name</span> attribute value.</td>
+						<td class="extraLineHeight">
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"checkbox"</span> <span class="attribute">name</span>=<span class="values">"colors"</span>&gt;Yellow&lt;<span class="tag">br</span>&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"checkbox"</span> <span class="attribute">name</span>=<span class="values">"colors"</span>&gt;Blue&lt;<span class="tag">br</span>&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"checkbox"</span> <span class="attribute">name</span>=<span class="values">"colors"</span>&gt;Red&lt;<span class="tag">br</span>&gt;
+						</td>
+						<td>
+							<input type="checkbox" name="colors">Yellow<br>
+							<input type="checkbox" name="colors">Blue<br>
+							<input type="checkbox" name="colors">Red<br>
+						</td>
+					</tr>
+					<tr>
+						<td>Radio Button Type</td>
+						<td>Renders a single radio button. To create a group of checkboxes related to the same topic, they should all use the same <span class="attribute">name</span> attribute value.</td>
+						<td class="extraLineHeight">
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"radio"</span> <span class="attribute">name</span>=<span class="values">"gintama"</span>&gt;Gintoki&lt;<span class="tag">br</span>&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"radio"</span> <span class="attribute">name</span>=<span class="values">"gintama"</span>&gt;Shinpachi&lt;<span class="tag">br</span>&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"radio"</span> <span class="attribute">name</span>=<span class="values">"gintama"</span>&gt;Kagura&lt;<span class="tag">br</span>&gt;
+						</td>
+						<td>
+							<input type="radio" name="gintama">Gintoki<br>
+							<input type="radio" name="gintama">Shinpachi<br>
+							<input type="radio" name="gintama">Kagura<br>
+						</td>
+						</td>
+					</tr>
+					<tr>
+						<td>Text Type</td>
+						<td>Allows a user to type their input.</td>
+						<td>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">name</span>=<span class="values">"username"</span>&gt;
+						</td>
+						<td>
+							<input type="text" name="username">
+						</td>
+					</tr>
+					<tr>
+						<td>Number Type</td>
+						<td>Input field that allows the user to enter <strong>only</strong> numbers and some special characters.</td>
+						<td>&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"number"</span> <span class="attribute">name</span>=<span class="values">"balance"</span> /&gt;</td>
+						<td>
+							<input type="number" name="balance" />
+						</td>
+					</tr>
+					<tr>
+						<td>Range Type</td>
+						<td>A slider that acts as a selector between a minimum and maximum value that increases or decreases in a specified increment.</td>
+						<td>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"range"</span> <span class="attribute">name</span>=<span class="values">"star-rating"</span> <span class="attribute">min</span>=<span class="values">"0"</span> <span class="attribute">max</span>=<span class="values">"5"</span> <span class="attribute">step</span>=<span class="values">"1"</span>&gt;
+						</td>
+						<td>
+							<input type="range" name="star-rating" min="0" max="5" step="1">
+						</td>
 					</tr>
 				</tbody>
 			</table>

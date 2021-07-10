@@ -1,8 +1,10 @@
 body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 	text-align: center;
 	background-color: rgb(37, 36, 37);
 	color: white;
-	font-size: 14px;
 }
 
 thead {
@@ -12,12 +14,34 @@ thead {
 table, th, td {
 	border: 2px solid rgb(93, 70, 145);
 	border-collapse: collapse;
-	font-family: sans-serif;
 	margin: 0 auto;
+}
+
+table {
+	width: 90%;
+}
+
+td {
+	padding: 5px;
 }
 
 p {
 	font-family: sans-serif;
+}
+
+h1, h2 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+}
+
+strong {
+	color: lightslategray;
+	text-decoration: underline;
 }
 
 .code {
@@ -30,8 +54,20 @@ p {
 	color: cornflowerblue;
 }
 
+.attribute {
+	color: limegreen;
+}
+
 .tag {
 	color: deeppink;
+}
+
+.values {
+	color: yellow;
+}
+
+.extraLineHeight {
+	line-height: 20px;
 }
 
 #example1 {
