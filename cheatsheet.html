@@ -110,7 +110,31 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td colspan="4">INPUTS</td>
+						<td>&lt;<span class="tag">form</span>&gt; Element</td>
+						<td>This element is used to collect and send information to an external source.<br>Once information is collected, it can be sent using <span class="attribute">action</span> and <span class="attribute">method</span> attributes.</td>
+						<td>
+							&lt;<span class="tag">form</span> <span class="attribute">method</span>=<span class="values">"post"</span> <span class="attribute">action</span>=<span class="values">"http:server1"</span>&gt;
+							<br>This form is just an example, hitting submit will result in an error page.
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">name</span>=<span class="values">"fname"</span>&gt;
+							<br>
+							&lt;<span class="tag">br</span>&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"submit"</span> <span class="attribute">name</span>=<span class="values">"Submit"</span>&gt;
+							&lt;/<span class="tag">form</span>&gt;
+						</td>
+						<td>
+							<form method="post" action="http:server1">
+							This form is just an example, hitting submit will result in an error page.
+							<input type="text" name="fname">
+							<br/>
+							<input type="submit" name="Submit">
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">INPUTS</td>
+						<td colspan="2">The &lt;input&gt; element is used to render input fields such as text fields, checkboxes, buttons, etc.</td>
 					</tr>
 					<tr>
 						<td>Checkbox Type</td>
@@ -171,6 +195,53 @@
 						</td>
 						<td>
 							<input type="range" name="star-rating" min="0" max="5" step="1">
+						</td>
+					</tr>
+					<tr>
+						<td>Password Type</td>
+						<td>Renders an input field that allows the user to type censored text inside the field.</td>
+						<td>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">name</span>=<span class="values">"username"</span> /&gt;
+							<br>
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"password"</span> <span class="attribute">name</span>=<span class="values">"password"</span> /&gt;
+						</td>				
+						<td>
+							<input type="text" name="username" />
+							<input type="password" name="password" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">Other Elements</td>
+					</tr>
+					<tr>
+						<td>&lt;<span class="tag">label</span>&gt; Element</td>
+						<td>Provides identification for a specific &lt;<span class="tag">input</span>&gt; based on matching values of the &lt;<span class="tag">input</span>&gt;;s id attribute and the &lt;<span class="tag">label</span>&gt;'s for attribute.</td>
+						<td>
+							&lt;<span class="tag">label</span> <span class="attribute">for</span>=<span class="values">"password "</span>&gt;Password:&lt;/<span class="tag">label</span>&gt;
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">id</span>=<span class="values">"password"</span> <span class="attribute">name</span>=<span class="values">"password"</span>&gt;
+						</td>
+						<td>
+							<label for="password ">Password:</label>
+							<input type="text" id="password" name="password">
+						</td>
+					</tr>
+					<tr>
+						<td>&lt;<span class="tag">select</span>&gt; Element</td>
+						<td>Used to create a dropdown list using &lt;<span class="tag">option</span>&gt; elements</td>
+						<td>
+							&lt;<span class="tag">select</span> <span class="attribute">name</span>=<span class="values">"drink-option"</span>&gt;
+							<br>
+							&lt;<span class="tag">option</span> <span class="attribute">value</span>=<span class="values">"cold"</span>&gt;Cold&lt;/<span class="tag">option</span>&gt;
+							<br>
+							&lt;<span class="tag">option</span> <span class="attribute">value</span>=<span class="values">"hot"</span>Hot/<span class="tag">option</span>
+						<br>
+							&lt;/<span class="tag">select</span>&gt;
+						</td>
+						<td>
+							<select name="drink-option">
+								<option value="cold">Cold</option>
+								<option value="hot">Hot</option>
+							</select>
 						</td>
 					</tr>
 				</tbody>
