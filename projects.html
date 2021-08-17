@@ -12,11 +12,12 @@
 
 	<body>
 		<header>
-			<h1><a href="./index.html">Veenna San Felipe</a></h1>
+			<h1><a href="#">Veenna San Felipe</a></h1>
+			<br>
 			<nav>
 				<ul>
-					<li><a href="./index.html">About</a></li>
-					<li><a href="#">Projects</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="./projects.html">Projects</a></li>
 					<li><a href="./art.html">Art</a></li>
 				</ul>
 			</nav>
@@ -71,13 +72,26 @@
 
 		<footer>
 			<h3>Contact and Links</h3>
-				<p>Email vsanfeli@ucsc.edu</p>
+			<p>Please leave your name and an email address for inquiries. I look forward to hearing from you!</p>
+			
+			<form action="mailto:vsanfeli@ucsc.edu" method="POST"	enctype="multipart/form-data" name="EmailForm">
+				<label for="YourName">Name:</label>
+				<input type="text" name="YourName">
+				<br>
+				<label for="YourEmail">Email:</label>
+				<input type="text" name="YourEmail">
+				<br>
+				<input type="submit" value="Submit" id="button">
+			</form>
+
+			<div id="footer-links">
 				<ul>
 					<li><a href="https://www.linkedin.com/in/v-san-felipe/">LinkedIn</a></li>
 					<li><a href="https://www.artstation.com/veennasf">ArtStation</a></li>
 					<li><a href="https://veennasaur.itch.io/">itch.io</a></li>
 					<li><a href="https://github.com/veenna-san-felipe">GitHub</a></li>
 				</ul>
+			</div>
 		</footer>
 	</body>
 </html>

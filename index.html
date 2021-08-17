@@ -10,10 +10,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
 	</head>
 
-
 	<body>
 		<header>
 			<h1><a href="#">Veenna San Felipe</a></h1>
+			<br>
 			<nav>
 				<ul>
 					<li><a href="#">About</a></li>
@@ -23,38 +23,56 @@
 			</nav>
 		</header>
 
-		<section id="about">
-			<img src="resources/headshot.JPG" alt="headshot" id="headshot-img">
-			<div id="bio">
-				<h2>Yellow, world!</h2>
-				<p>
-					My name's Veenna and I'm a creative. In 2020, I graduated from the University of California Santa Cruz with a B.S. in Computer Science: Computer Game Design. I was the lead artist in Patchwork Harmony and a 3D artist for Kidgilantes. Currently, I'm learning HTML, CSS, and JavaScript to build this website.
-				</p>
-			</div>
-		</section>
+		<main>
+			<section id="about">
+				<img src="resources/headshot.JPG" alt="headshot" id="headshot-img">
+				<div id="bio">
+					<h2>Yellow, world!</h2>
+					<p>
+						My name's Veenna and I'm an aspiring Web Developer. In 2020, I graduated from the University of California Santa Cruz with a B.S. in Computer Science: Computer Game Design. I was the lead artist in Patchwork Harmony and a 3D artist for Kidgilantes. Currently, I'm learning HTML, CSS, and JavaScript to build this website.
+					</p>
+				</div>
+			</section>
+		</main>
 
 		<footer>
 			<h3>Contact and Links</h3>
-				<p>Email vsanfeli@ucsc.edu</p>
+			<p>Please leave your name and an email address for inquiries. I look forward to hearing from you!</p>
+			
+			<form action="mailto:vsanfeli@ucsc.edu" method="POST"	enctype="multipart/form-data" name="EmailForm">
+				<label for="YourName">Name:</label>
+				<input type="text" name="YourName">
+				<br>
+				<label for="YourEmail">Email:</label>
+				<input type="text" name="YourEmail">
+				<br>
+				<input type="submit" value="Submit" id="button">
+			</form>
+
+			<div id="footer-links">
 				<ul>
 					<li><a href="https://www.linkedin.com/in/v-san-felipe/">LinkedIn</a></li>
 					<li><a href="https://www.artstation.com/veennasf">ArtStation</a></li>
 					<li><a href="https://veennasaur.itch.io/">itch.io</a></li>
 					<li><a href="https://github.com/veenna-san-felipe">GitHub</a></li>
 				</ul>
+			</div>
 		</footer>
 	</body>
 </html>
 
 <!---------- TO DO LIST: ----------
 
-	* Change all em to px
-	* Edit footer
+	* Style the form in footer contact section
+	* C&P CSS for other versions of iPhone
+	* C&P CSS, then edit for responsive screens bigger than mobile ones (ie tablets and laptops)
+	* Connect GitHub Pages projects (mock website) to Projects section
+	* Take pictures of paintings and add them to ArtStation/Art section
 
 	* Future Ideas:
 		- Make header responsive (from horizontal to a vertical drop down menu)
 		- Make interactable parts more interesting (links, carousel project section)
-		- Add doodles to the header and footer for theme
+		- Add personal doodles to the header and footer for theme
 		- Add a Figma or DeviantArt section under art
 
   ---------- TO DO LIST ---------->

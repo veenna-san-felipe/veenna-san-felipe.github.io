@@ -70,6 +70,12 @@ strong {
 	line-height: 20px;
 }
 
+.left-align {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
 #example1 {
 	color: red;
 }

@@ -1,256 +1,382 @@
-html {
+* {
 	box-sizing: border-box;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 22px;
-	color: rgb(122, 109, 73);
-	background-color: rgb(251, 244, 226);
-	text-align: center;
-}
-
-h1 {
-	float: left;
-	font-size: 22px;
-	color: rgb(122, 109, 73);
-	border: 5px solid rgb(122, 109, 73);
-	border-radius: 15px;
-	padding: 5px;
-	margin-left: 12px;
-}
-
-h1 a {
-	text-decoration: none;
-	color: inherit;
-}
-
-h2 {
-	color: rgb(245, 195, 21);
-	font-size: 60px;
-}
-
-h3 {
-	color: rgb(122, 109, 73);
-}
-
-/* ----- HEADER ----- */
-header {
-	background-color: rgba(250, 223, 150, 98);
-}
-
-header:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
-nav {
-	float: right;
-}
-
-nav a {
-	color: rgb(122, 109, 73);
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: bold
-}
-
-nav a:hover {
-	opacity: 50%;
-	text-decoration: underline;
-	transition: ease 100ms;
-}
-
-nav ul {
-	margin: 0;
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-	margin: 25px 25px 0;
-}
-
-/* ----- END HEADER ----- */
-
-/* ----- ABOUT ----- */
-
-#about {
-	height: 550px;
-	background-color: rgb(251, 244, 226);
-	padding: 100px;
-}
-
-#about:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
-#headshot-img {
-	width: 325px;
-	height: 325px;
-	border-radius: 45px;
-	float: left;
-	margin-left: 50px;
-}
-
-#bio {
-	max-width: 750px;
-	max-height: 325px;
-	float: right;
-	margin-right: 50px;
-}
-
-#bio p {
-	font-family: 'Noto Serif JP', serif;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 30px;
-	letter-spacing: 1px;
-}
-
-/* ----- END ABOUT ----- */
-
-/* ----- PROJECTS ----- */
-
-#projects {
-	padding: 0 50px;
-}
-
-#project-blocks {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-.block {
-	margin: 25px;
-	background-color: rgb(199, 176, 119);;
-	border-radius: 15px;
-	height: 250px;
-	width: 250px;
-	padding: 25px;
-}
-
-.project-title {
-	color: rgb(251, 244, 226);
-	text-decoration: none;
-	word-wrap: break-word;
-	font-weight: bold;
-	font-size: 1rem;
-}
-
-.project-img {
-	height: 130px;
-	width: 175px;
-	margin: 10px;
-	border-radius: 10px;
-}
-
-#design-system img,
-#kidgilantes img,
-#patchwork-harmony img,
-#cheatsheet img,
-#glitch img {
-	margin: 30px 0px 0px;
-}
-
-/* ----- END PROJECTS ----- */
-
-/* ----- ART ----- */
-
-#art h3 {
-	color: rgb(122, 109, 73);
-}
-
-#art .project-title {
-	color: rgb(245, 195, 21);
-}
-
-#artwork-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#cyrus {
-	height: 45%;
-	width: 45%;
-	margin: 25px 0 50px;
-}
-
-#neon-girl {
-	height: 40%;
-	width: 40%;
-	padding: 0px 20px 20px;
-}
-
-/* ----- END ART ----- */
-
-/* ----- CONTACT/FOOTER----- */
-
-footer {
-	background-color: rgba(250, 223, 150, 98);
-	padding: 10px;
-	bottom: 0;
-	width: 100%;
-}
-
-footer a {
-	color: rgb(122, 109, 73);
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold
-	font-weight: normal;
-	font-size: 16px;
-}
-
-footer a:hover {
-	opacity: 50%;
-	text-decoration: underline;
-	transition: ease 100ms; 
-}
-
-footer h2 {
-	margin-top: 0.5em;
-}
-
-footer p {
-	font-size: 18px;
-}
-
-footer li {
-	color: rgb(122, 109, 73);
-	font-weight: bold;
-	display: inline-block;
-	margin: 0 1.5em 1em;
-	position: relative;
-}
-
-footer ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+}
+
+/* Portrait and Landscape for iPhone 6 up to iPhone 8+*/
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      text-align: center;
+      background-color: rgb(251, 244, 226);
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    /* --------------- header --------------- */
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      background-color: rgb(250, 223, 150);
+    }
+
+    h1 {
+      width: 275px;
+      border: 5px solid rgb(122, 109, 73);
+      border-radius: 15px;
+    }
+
+    h1 a {
+      color: rgb(122, 109, 73);
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    nav ul {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    li:not(:first-child) {
+      padding-left: 20px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: rgb(122, 109, 73);
+      padding: 5px;
+    }
+
+    li a:active {
+      color: rgb(251, 244, 226);
+      background-color: rgb(122, 109, 73);
+      border-radius: 10px;
+    }
+
+    /* --------------- main --------------- */
+
+    #about {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 35px 25px 25px;
+    }
+
+    img {
+      max-width: 180px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: rgb(245, 195, 21);
+      font-size: 30px;
+    }
+
+    #about p {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 12px;
+        color: rgb(169, 146, 89);
+        padding: 0px 10px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    /* --------------- footer --------------- */
+    
+    footer {
+      padding: 30px 25px 30px;
+      background-color: rgb(250, 223, 150);
+    }
+
+    h3 {
+      padding: 5px;
+      color: rgb(122, 109, 73);
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      color: rgb(169, 146, 89);
+      padding: 0px 15px;
+    }
+
+    form {
+      padding: 5px;
+    }
+
+    form label {
+      color: rgb(122, 109, 73);
+      font-family: 'Noto Serif JP', serif;
+      font-size: 12px;
+    }
+
+    form input {
+      border: none;
+      border-radius: 5px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 12px;
+      color: rgb(122, 109, 73);
+      margin: 5px;
+    }
+
+    #button {
+      font-size: 10px;
+      background-color: rgb(207, 174, 62);
+      color: rgb(251, 244, 226);
+      padding: 5px;
+    }
+
+    #footer-links ul {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 5px;
+    }
+}
+
+/* --------------- Bigger screens --------------- */
+
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 2400px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+      text-align: center;
+      background-color: rgb(251, 244, 226);
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    /* --------------- Header --------------- */
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      background-color: rgb(250, 223, 150);
+    }
+
+    h1 {
+      width: 400px;
+      border: 8px solid rgb(122, 109, 73);
+      border-radius: 15px;
+      padding: 8px;
+    }
+
+    h1 a {
+      color: rgb(122, 109, 73);
+      text-decoration: none;
+      font-size: 40px;
+    }
+
+    nav ul {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    li:not(:first-child) {
+      padding-left: 40px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: rgb(122, 109, 73);
+      font-size: 18px;
+      padding: 8px;
+    }
+
+    li a:hover {
+      color: rgb(251, 244, 226);
+      background-color: rgb(122, 109, 73);
+      border-radius: 10px;
+    }
+
+    /* --------------- About Main --------------- */
+
+    #about {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 35px 25px 25px;
+    }
+
+    img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: rgb(245, 195, 21);
+      font-size: 36px;
+    }
+
+    #about p {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 16px;
+        color: rgb(169, 146, 89);
+        padding: 0px 80px;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+
+    /* --------------- Projects --------------- */
+
+    #projects {
+      padding: 0 50px;
+    }
+
+    #project-blocks {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .block {
+      margin: 25px;
+      background-color: rgb(199, 176, 119);;
+      border-radius: 15px;
+      height: 250px;
+      width: 250px;
+      padding: 25px;
+    }
+
+    .project-title {
+      color: rgb(251, 244, 226);
+      text-decoration: none;
+      word-wrap: break-word;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .project-img {
+      height: 130px;
+      width: 175px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    #design-system img,
+    #kidgilantes img,
+    #patchwork-harmony img,
+    #cheatsheet img,
+    #glitch img {
+      margin: 30px 0px 0px;
+    }
+
+    /* --------------- Art --------------- */
+
+    #art h3 {
+      color: rgb(122, 109, 73);
+    }
+
+    #art .project-title {
+      color: rgb(245, 195, 21);
+    }
+
+    #artwork-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #cyrus {
+      height: 45%;
+      width: 45%;
+      margin: 25px 0 50px;
+    }
+
+    #neon-girl {
+      height: 40%;
+      width: 40%;
+      padding: 0px 20px 20px;
+    }
+
+    /* --------------- Footer --------------- */
+    
+    footer {
+      padding: 30px 25px 30px;
+      background-color: rgb(250, 223, 150);
+    }
+
+    h3 {
+      font-size: 24px;
+      padding: 5px;
+      color: rgb(122, 109, 73);
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 45px;
+      color: rgb(169, 146, 89);
+      padding: 0px 15px;
+    }
+
+    form {
+      padding: 5px;
+    }
+
+    form label {
+      color: rgb(122, 109, 73);
+      font-family: 'Noto Serif JP', serif;
+      font-size: 16px;
+    }
+
+    form input {
+      border: none;
+      border-radius: 5px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 14px;
+      color: rgb(122, 109, 73);
+      margin: 10px;
+    }
+
+    #button {
+      font-size: 14px;
+      background-color: rgb(207, 174, 62);
+      color: rgb(251, 244, 226);
+      padding: 5px;
+    }
+
+    #footer-links ul {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 5px;
+    }
 }
 
 /* ----- COLOR PALETTE REFERENCE -----
 
-	* Dusty yellow: #CFAE3E, rgb(207, 174, 62);
-	* Warm gray: #7A776E, rgb(122, 119, 110);
-	* Pale yellow: #FADF96, rgb(250, 223, 150);
-	* Warm white: #FBF4E2, rgb(251, 244, 226);
-	* Pale brown: #7A6D49, rgb(122, 109, 73);
-	* Lighter pale brown: #A99259, rgb(169, 146, 89);
-	* Khaki: #C7B077, rgb(199, 176, 119);
-	* Sunshine Yellow: #F5C315, rgb(245, 195, 21);
+  * Dusty yellow: #CFAE3E, rgb(207, 174, 62);
+  * Warm gray: #7A776E, rgb(122, 119, 110);
+  * Pale yellow: #FADF96, rgb(250, 223, 150);
+  * Warm white: #FBF4E2, rgb(251, 244, 226);
+  * Pale brown: #7A6D49, rgb(122, 109, 73);
+  * Lighter pale brown: #A99259, rgb(169, 146, 89);
+  * Khaki: #C7B077, rgb(199, 176, 119);
+  * Sunshine Yellow: #F5C315, rgb(245, 195, 21);
 
 ----- COLOR PALETTE REFERENCE ----- */

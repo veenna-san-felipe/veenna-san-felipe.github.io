@@ -112,7 +112,7 @@
 					<tr>
 						<td>&lt;<span class="tag">form</span>&gt; Element</td>
 						<td>This element is used to collect and send information to an external source.<br>Once information is collected, it can be sent using <span class="attribute">action</span> and <span class="attribute">method</span> attributes.</td>
-						<td>
+						<td class="left-align">
 							&lt;<span class="tag">form</span> <span class="attribute">method</span>=<span class="values">"post"</span> <span class="attribute">action</span>=<span class="values">"http:server1"</span>&gt;
 							<br>This form is just an example, hitting submit will result in an error page.
 							<br>
@@ -134,12 +134,12 @@
 					</tr>
 					<tr>
 						<td colspan="2">INPUTS</td>
-						<td colspan="2">The &lt;input&gt; element is used to render input fields such as text fields, checkboxes, buttons, etc.</td>
+						<td colspan="2">The &lt;<span class="tag">input</span>&gt; element is used to render input fields such as text fields, checkboxes, buttons, etc.</td>
 					</tr>
 					<tr>
 						<td>Checkbox Type</td>
 						<td>Renders a single checkbox. To create a group of checkboxes related to the same topic, they should all use the same <span class="attribute">name</span> attribute value.</td>
-						<td class="extraLineHeight">
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"checkbox"</span> <span class="attribute">name</span>=<span class="values">"colors"</span>&gt;Yellow&lt;<span class="tag">br</span>&gt;
 							<br>
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"checkbox"</span> <span class="attribute">name</span>=<span class="values">"colors"</span>&gt;Blue&lt;<span class="tag">br</span>&gt;
@@ -155,7 +155,7 @@
 					<tr>
 						<td>Radio Button Type</td>
 						<td>Renders a single radio button. To create a group of checkboxes related to the same topic, they should all use the same <span class="attribute">name</span> attribute value.</td>
-						<td class="extraLineHeight">
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"radio"</span> <span class="attribute">name</span>=<span class="values">"gintama"</span>&gt;Gintoki&lt;<span class="tag">br</span>&gt;
 							<br>
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"radio"</span> <span class="attribute">name</span>=<span class="values">"gintama"</span>&gt;Shinpachi&lt;<span class="tag">br</span>&gt;
@@ -172,7 +172,7 @@
 					<tr>
 						<td>Text Type</td>
 						<td>Allows a user to type their input.</td>
-						<td>
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">name</span>=<span class="values">"username"</span>&gt;
 						</td>
 						<td>
@@ -182,7 +182,8 @@
 					<tr>
 						<td>Number Type</td>
 						<td>Input field that allows the user to enter <strong>only</strong> numbers and some special characters.</td>
-						<td>&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"number"</span> <span class="attribute">name</span>=<span class="values">"balance"</span> /&gt;</td>
+						<td class="extraLineHeight left-align">
+							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"number"</span> <span class="attribute">name</span>=<span class="values">"balance"</span> /&gt;</td>
 						<td>
 							<input type="number" name="balance" />
 						</td>
@@ -190,7 +191,7 @@
 					<tr>
 						<td>Range Type</td>
 						<td>A slider that acts as a selector between a minimum and maximum value that increases or decreases in a specified increment.</td>
-						<td>
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"range"</span> <span class="attribute">name</span>=<span class="values">"star-rating"</span> <span class="attribute">min</span>=<span class="values">"0"</span> <span class="attribute">max</span>=<span class="values">"5"</span> <span class="attribute">step</span>=<span class="values">"1"</span>&gt;
 						</td>
 						<td>
@@ -200,7 +201,7 @@
 					<tr>
 						<td>Password Type</td>
 						<td>Renders an input field that allows the user to type censored text inside the field.</td>
-						<td>
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">name</span>=<span class="values">"username"</span> /&gt;
 							<br>
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"password"</span> <span class="attribute">name</span>=<span class="values">"password"</span> /&gt;
@@ -215,9 +216,9 @@
 					</tr>
 					<tr>
 						<td>&lt;<span class="tag">label</span>&gt; Element</td>
-						<td>Provides identification for a specific &lt;<span class="tag">input</span>&gt; based on matching values of the &lt;<span class="tag">input</span>&gt;;s id attribute and the &lt;<span class="tag">label</span>&gt;'s for attribute.</td>
-						<td>
-							&lt;<span class="tag">label</span> <span class="attribute">for</span>=<span class="values">"password "</span>&gt;Password:&lt;/<span class="tag">label</span>&gt;
+						<td>Provides identification for a specific &lt;<span class="tag">input</span>&gt; based on matching values of the &lt;<span class="tag">input</span>&gt;'s id attribute and the &lt;<span class="tag">label</span>&gt;'s for attribute.</td>
+						<td class="extraLineHeight left-align">
+							&lt;<span class="tag">label</span> <span class="attribute">for</span>=<span class="values">"password "</span>&gt;Password:&lt;/<span class="tag">label</span>&gt;<br>
 							&lt;<span class="tag">input</span> <span class="attribute">type</span>=<span class="values">"text"</span> <span class="attribute">id</span>=<span class="values">"password"</span> <span class="attribute">name</span>=<span class="values">"password"</span>&gt;
 						</td>
 						<td>
@@ -228,7 +229,7 @@
 					<tr>
 						<td>&lt;<span class="tag">select</span>&gt; Element</td>
 						<td>Used to create a dropdown list using &lt;<span class="tag">option</span>&gt; elements</td>
-						<td>
+						<td class="extraLineHeight left-align">
 							&lt;<span class="tag">select</span> <span class="attribute">name</span>=<span class="values">"drink-option"</span>&gt;
 							<br>
 							&lt;<span class="tag">option</span> <span class="attribute">value</span>=<span class="values">"cold"</span>&gt;Cold&lt;/<span class="tag">option</span>&gt;
@@ -244,10 +245,74 @@
 							</select>
 						</td>
 					</tr>
+					<tr>
+						<td>&lt;<span class="tag">textarea</span>&gt; Element</td>
+						<td>Used to create a text-box for multi-line input. The textarea field can be stretched/shrunk, but utilizes rows and cols attributes to determine initial size.</td>
+						<td>
+							&lt;<span class="tag">textarea</span> <span class="attribute">rows</span>=<span class="values">"10"</span> <span class="attribute">cols</span>=<span class="values">"30"</span> <span class="attribute">name</span>=<span class="values">"comment"</span>&gt;&lt;/<span class="tag">textarea</span>&gt;
+						</td>
+						<td><textarea rows="10" cols="30" name="comment"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="4">Attributes</td>
+					</tr>
+					<tr>
+						<td colspan="2">&lt;<span class="tag">input</span>&gt; name Attrbute</td>
+						<td colspan="2">In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by setting the name attribute of the input element. The name will become the key and the value of the input will become the value the form submits corresponding to the key.</td>
+					</tr>
+					<tr>
+						<td colspan="2">&lt;<span class="tag">required</span>&gt; Attribute</td>
+						<td colspan="2">Specifies that the field must include a value.</td>
+					</tr>
+					<tr>
+						<td colspan="2">min and max Attributes</td>
+						<td colspan="2">Specifies the minimum or maximum value that can be entered into the field.</td>
+					</tr>
+					<tr>
+						<td colspan="2">minlength and maxlength Attributes</td>
+						<td colspan="2">Makes sure that the input text has reached the minimum or is within the maximum length.</td>
+					</tr>
 				</tbody>
 			</table>
 
 		<h2>CSS</h2>
+			<h3>Syntax and Selectors</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;<span class="tag">link</span>&gt; Element</td>
+							<td>Used to lnk HTML documents to external resources like CSS files. It commonly uses <span class="attribute">href</span>, <span class="attribute">rel</span>, and <span class="attribute">type</span> attributes.</td>
+						</tr>
+						<tr>
+							<td>Type Selectors</td>
+							<td>Used to match all elements of a given type or tag name.</td>
+						</tr>
+						<tr>
+							<td>Class Selectors</td>
+							<td>Used to match all elements based on the contents of their class attribute. These are selected by prepending the attribute with a '.'.</td>
+						</tr>
+						<tr>
+							<td>ID Selectors</td>
+							<td>Used to match elements based on the contents of their id attrbute. These values should unique in the entire DOM. These are selected by prepending the attribute with a '#'.</td>
+						</tr>
+						<tr>
+							<td colspan="2">Will add more</td>
+						</tr>
+					</tbody>
+				</table>
+
+			<h3>Visual Rules</h3>
+
+			<h3>The Box Model</h3>
+
+			<h3>Display and Positioning</h3>
+
 			<h3>Colors</h3>
 				<table>
 						<thead>
@@ -323,6 +388,8 @@
 							</tr>
 						</tbody>
 				</table>
+
+			<h3>Typography</h3>
 
 		<h2>JavaScript</h2>
 			<p>Will add to this section gradually.</p>
