@@ -314,7 +314,13 @@
     /* --------------- Projects --------------- */
 
     #projects {
-      padding: 0 50px;
+      padding: 0px 50px;
+    }
+
+    #projects h3 {
+      color: rgb(122, 109, 73);
+      padding-top: 25px;
+      font-size: 22px;
     }
 
     #project-blocks {
@@ -365,6 +371,7 @@
       margin: 25px;
       text-decoration: none;
       color: rgb(122, 109, 73);
+      font-size: 22px;
     }
 
     #artwork-section {
